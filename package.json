@@ -1,0 +1,20 @@
+{
+  "name": "course-node-core-concepts",
+  "version": "0.1.0",
+  "description": "Exercises from the course 'Understanding Node.js: Core Concepts' by Joseph Heidari",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "v8"
+  ],
+  "author": "Kasnix",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.6.0"
+  }
+}
