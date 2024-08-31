@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "description": "Exercises from the course 'Understanding Node.js: Core Concepts' by Joseph Heidari",
   "type": "module",
-  "main": "index.js",
   "scripts": {
     "buffers": "node 1-buffers",
-    "files": "node 2-files"
+    "files": "node 2-files",
+    "streams": "node 3-streams"
   },
   "keywords": [
     "javascript",

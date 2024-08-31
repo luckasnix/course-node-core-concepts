@@ -27,12 +27,12 @@ const renameFile = async (oldPath, newPath) => {
   }
 };
 
-const fileHandler = await open('./2-files/command.txt', 'r');
+const fileHandle = await open('./2-files/command.txt', 'r');
 
-fileHandler.on('change', async () => {
-  const { size } = await fileHandler.stat();
+fileHandle.on('change', async () => {
+  const { size } = await fileHandle.stat();
   const buffer = Buffer.alloc(size);
-  await fileHandler.read(buffer, 0, buffer.byteLength, 0);
+  await fileHandle.read(buffer, 0, buffer.byteLength, 0);
   const fileContent = buffer.toString('utf8');
   const [fileCommand, ...fileParams] = fileContent.split('|');
   switch (fileCommand) {
@@ -55,6 +55,6 @@ const fileWatcher = watch('./2-files/command.txt');
 
 for await (const event of fileWatcher) {
   if (event.eventType === 'change') {
-    fileHandler.emit('change');
+    fileHandle.emit('change');
   }
 }
