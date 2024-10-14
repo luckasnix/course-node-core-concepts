@@ -1,6 +1,5 @@
 {
   "name": "course-node-core-concepts",
-  "version": "0.1.0",
   "description": "Exercises from the course 'Understanding Node.js: Core Concepts' by Joseph Heidari",
   "type": "module",
   "scripts": {
